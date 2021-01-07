@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="DX - DeporteXtremo">
+		<meta name="description" content="Todas las noticias del mundo deportivo en un solo lugar ¡Viví eXtremo!">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://eant.github.io/EDD-FullstackEssentials/">
+		<meta property="og:title" content="DX - DeporteXtremo">
+		<meta property="og:description" content="Todas las noticias del mundo deportivo en un solo lugar ¡Viví eXtremo!">
+		<meta property="og:image" content="img/f1.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://eant.github.io/EDD-FullstackEssentials/">
+		<meta property="twitter:title" content="DX - DeporteXtremo">
+		<meta property="twitter:description" content="Todas las noticias del mundo deportivo en un solo lugar ¡Viví eXtremo!">
+		<meta property="twitter:image" content="img/f1.jpg">
+
+		<!-- Favicon -->
+		<meta name="msapplication-TileColor" content="#343a40">
+		<meta name="theme-color" content="#343a40">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+		<link rel="icon" sizes="32x32" type="image/png" href="img/favicons/favicon-32x32.png">
+		<link rel="icon" sizes="16x16" type="image/png" href="img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#343a40">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<title>MX - MarvelExtremo</title>
+
+
+		<style>
+			body{
+				margin:0;
+				font-family: 'Monda', sans-serif;
+				background: linear-gradient(-45deg, #ee7752, #f23636, #23a6d5, #23d56a);
+				background-size: 400% 400%;
+				animation: gradient 5s ease infinite;
+			}
+
+			@keyframes gradient {
+				0% {
+					background-position: 0% 50%;
+				}
+				50% {
+					background-position: 100% 50%;
+				}
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			<a class="navbar-brand d-flex align-items-center" href="#">
+				<img style="width: 150px;" src="img/logomarvel.png">
+				<h1 class="h2 mx-1 my-0 font-weight-bold">MarvelExtremo</h1>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="menu">
+				<ul class="navbar-nav text-center text-center">
+					<li class="active">
+						<a class="nav-link" href="index.html">Personajes</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#">Comics</a>
+					</li>
+				</ul>
+			</div>
+			<button id="btn-crear-producto" type="button" class="btn btn-danger h-100 mr-2 ml-auto" data-toggle="modal"
+                data-target="#agregarProducto">
+                Agregar Personaje
+			</button>
+			
+			<button class="btn btn-danger d-none" id="boton-prompt"> Agregar Personaje Prompt</button>
+		</nav>
+
+		<section id="noticias-destacadas" class="carousel slide" data-ride="carousel">
+
+			<div class="carousel-inner">
+
+				<figure class="carousel-item active">
+					<img class="d-block w-100" src="https://64.media.tumblr.com/67ba68dda2af5fc51b784e4c1eaa63d2/tumblr_ozbb8iX9to1sc0ffqo3_540.gifv">
+					<figcaption class="bg-dark text-white p-4">
+						<h2 class="text-center">Thor 4: Batalla contra la EANT - Marvel Comics anunció nueva película</h2>
+					</figcaption>
+				</figure>
+
+				<figure class="carousel-item">
+					<img class="d-block w-100" src="https://i.pinimg.com/originals/47/03/0a/47030a99c179841cecc8f62b32c58552.gif">
+					<figcaption class="bg-dark text-white p-4">
+						<h2 class="text-center">Tony Stark: recordó que no renovó contrato</h2>
+					</figcaption>
+				</figure>
+
+				<figure class="carousel-item">
+					<img class="d-block w-100" src="https://pa1.narvii.com/6210/949a2aec657cfdb5044b092eee0fd276e5b37b21_hq.gif">
+					<figcaption class="bg-dark text-white p-4">
+						<h2 class="text-center">Deadpool se postuló como presidente</h2>
+					</figcaption>
+				</figure>
+
+			</div>
+
+			<a class="carousel-control-prev" href="#noticias-destacadas" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+
+			<a class="carousel-control-next" href="#noticias-destacadas" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</section>
+
+		<main class="container-fluid">
+
+
+			<div class="modal fade" id="agregarProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">
+								Falta un personaje? AGREGALO!
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<!-- Formulario  -->
+							<form action="POST" id="formulario-agregar-personaje">
+								<div class="form-group">
+									<input class="form-control" type="text" name="name" id="nombre-agregar" placeholder="Nombre del Personaje" />
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" name="description" id="descripcion-agregar" placeholder="Breve descripcion">
+								</div>
+								<div class="form-group">
+									<input class="form-control p-1" type="text" name="imagen" id="imagen-agregar"
+										placeholder="Imagen: ingresar URL de la imagen">
+								</div>
+								<div class="form-group">
+									<input class="form-control p-1" type="text" name="wiki" id="wiki-agregar"
+										placeholder="URL Wiki">
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">
+								Cerrar
+							</button>
+							<button type="button" id="enviar-personaje" class="btn btn-dark"
+								data-dismiss="modal">
+								Enviar Personaje!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid text-center mt-5 mb-5">
+				<h2 style="border-bottom: 2px solid black;" id="pj-titulo">Personajes de Marvel Comics</h2>
+			</div>
+			
+			<section id="ultimas-noticias" class="row">
+				<article class="col-12 col-md-6 col-lg-12 py-3 noticia d-none" style="background-color: red;">
+					<div class="container" style="border: 3px solid black;">
+						<div class="row">
+							<!-- Inicio Noticia -->
+							<div class="col-12 col-lg-4 noticia-img" style="padding: 0px;">
+								<img src="img/sorteo-libertadores.jpg" class="img-fluid">
+							</div>
+							<div class="col-12 col-lg-8 noticia-txt" style="background-color: rgb(216, 216, 216);">
+								<h3>La tecnología llega a la actual edición de la Libertadores</h3>
+								
+								<p>La Conmebol anunció la implementación del sistema VAR (asistencia arbitral por video) desde las semifinales de la actual Libertadores.</p>
+								<h4><p><a href="#">Personaje Wiki</a></h4>
+							</div>
+							<!-- Fin Noticia -->
+						</div>
+
+						
+					</div>
+					<!-- Noticia #1 -->
+					
+				</article>
+
+			</section>
+
+			
+		</main>
+		<footer class="p-2 bg-dark text-white text-center">
+			<small>&copy; 2017 - 2019 |	 Marcel Extremo - Derechos Reservados</small>
+		</footer>
+		<!-- Optional JavaScript -->
+		<script src="comportamiento.js"></script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
